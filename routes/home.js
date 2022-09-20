@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-// const {getPost} = require('../Controller/PostController.js')
+const {getPost} = require('../Controller/PostController.js')
  
 router.get("/", async (req, res, next) => {
   return res.status(200).json({
@@ -9,6 +9,6 @@ router.get("/", async (req, res, next) => {
   });
 });
 
-// router.get("/posts",getPost);
+router.get("/posts",getPost);
 
 module.exports = router;
