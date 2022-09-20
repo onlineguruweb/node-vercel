@@ -9,6 +9,6 @@ router.get("/", async (req, res, next) => {
   });
 });
 
-router.get("/posts",getPost);
+// router.get("/posts",getPost);
 
 module.exports = router;
