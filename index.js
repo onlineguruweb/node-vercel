@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 const app = express();
 app.use(express.json());
 
-console.log(process.env.MONGO_URL)
+console.log('testing',process.env.MONGO_URL)
 
 // app.use(process.env.MONGO_URL,{})
 // .then(()=>{
