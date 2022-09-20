@@ -9,7 +9,7 @@ app.use(express.json());
 
 console.log('testing',process.env.MONGO_URL)
 
-mongoose.connect(process.env.MONGO_URI,{
+mongoose.connect('mongodb+srv://onlineguruweb:Guru23052069@cluster0.yalvu.mongodb.net/?retryWrites=true&w=majority',{
     useNewUrlParser: true,
     useUnifiedTopology: true
   })
