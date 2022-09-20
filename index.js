@@ -1,10 +1,19 @@
 // Import packages
 const express = require("express");
 const home = require("./routes/home");
+const mongoose = require('mongoose');
 
 // Middlewares
 const app = express();
 app.use(express.json());
+
+app.use(process.env.MONGO_URL,{})
+.then(()=>{
+    console.log("mongoose connected")
+})
+.catch((e)=>{
+    console.log(e);
+})
 
 app.use("/", home);
 // Routes
