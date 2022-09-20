@@ -2,6 +2,7 @@
 const express = require("express");
 const home = require("./routes/home");
 const mongoose = require('mongoose');
+require('dotenv').config();
 
 // Middlewares
 const app = express();
